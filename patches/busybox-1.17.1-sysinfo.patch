@@ -1,8 +1,0 @@
---- busybox-1.17.1/networking/tcpudp.c
-+++ busybox-1.17.1/networking/tcpudp.c
-@@ -31,3 +31,4 @@
- #include "libbb.h"
- /* Wants <limits.h> etc, thus included after libbb.h: */
-+#define _LINUX_SYSINFO_H
- #include <linux/types.h> /* for __be32 etc */
- #include <linux/netfilter_ipv4.h>

@@ -1,38 +1,6 @@
-# Kobo-Reader Build Environment fork with fixes
+This repository contains the open source packages and patches that are used
+on the Kobo Reader and Kobo Desktop applications.
 
-> [!IMPORTANT]
-> Includes legacy source packages, toolchains, patches, and build scripts required to compile the development environment for Kobo Readers and Kobo Desktop applications on nowadays Debian 13.
-
----
-
-## Quick Start
-
-1. **Environment Setup**
--   Initialise and configure your local toolchain, sysroot (`fs`), temp directories and theb `build-config-user.sh` by sourcing the setup script:
-
-```bash
-source ./setup-allv.sh
-
-```
-
-2. **Compilation**
-Once initialised, trigger the main build process:
-```bash
-./build/build-all.sh
-
-```
-
-
-
-## Documentation & Notes
-
-For detailed information regarding legacy fixes, toolchain compatibility, and architecture patches, refer to the included guides:
-
-* **[FORK-FIXES-NOTES.md](./FORK-FIXES-NOTES.md)**
-
----
-
-```text
 documentation/	Some general documentation.
 build/		This contains the scripts necessary to create a working
 		development environment.
@@ -48,8 +16,7 @@ packages/	This contains the source code for the application stack used
 patches/	This contains the patches to the packages to get them to
 		compile on ARM, OS X, Windows, etc..
 examples/	This contains Video Poker and Blackjack - the easter eggs
-		found on the Kobo Reader family.
+		found on the Kobo Reader family. 
 poser/		This is a small interposing library used to sniff ioctl's.
 		Kobo used this to reverse engineer some of the Netronix
 		EB600em API in times when documentation was sparse.
-```
